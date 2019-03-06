@@ -2,9 +2,8 @@
 # @package PythonForDataAnalysisBook
 # Python for Data Analysis
 # chap 02. Test
-# 예제 깃허브
-# http ://github.com/pydata/pydata-book\
-# 문의 메일 : Wesmckinnn@gmail.com
+# 예제 깃허브 http ://github.com/pydata/pydata-book\ 문의 메일 : Wesmckinnn@gmail.com
+# Doxygen 기준 주석 작성
 
 ##
 # Json 모듈의 Load Test
@@ -15,13 +14,16 @@
 # @details bit.ly의 1.usa.gov 데이터
 # 1. example.txt load
 # 2. open 시 encoding 적용 필요
+# 3. timezone[tz] field 불러오기
 ##
 import json
 
 path = 'D:\\Dean\\GitHub\\pydata-book-2nd-edition\\datasets\\bitly_usagov\\example.txt'
 records = [json.loads(line) for line in open(path, encoding='UTF-8')]
+time_zones = [rec['tz'] for rec in records if 'tz' in rec]
 print(records[0])
-
+print(records[0]['tz'])
+print(time_zones[:10])
 
 # from collections import defaultdict
 # def get_counts2(sequence):
