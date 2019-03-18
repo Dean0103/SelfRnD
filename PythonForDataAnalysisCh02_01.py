@@ -1,6 +1,6 @@
 ##
 # @package PythonForDataAnalysisBook
-# Python for Data Analysis
+# Python for Data Analysis 도서 Study
 # chap 02. Test
 # 예제 깃허브 http ://github.com/pydata/pydata-book\ 문의 메일 : Wesmckinnn@gmail.com
 # Doxygen 기준 주석 작성
