@@ -109,7 +109,7 @@ count_subset = agg_counts.take(indexer)[-10:]
 print('count_subset : \n' + str(count_subset))
 
 # 그룹별 누적 막대
-count_subset.plot(kind='barh', stacked=True)
+# count_subset.plot(kind='barh', stacked=True)
 # plt.show()
 
 # 총합을 1로 정규화
